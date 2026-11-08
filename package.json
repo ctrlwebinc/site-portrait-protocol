@@ -1,0 +1,46 @@
+{
+  "name": "site-portrait-protocol",
+  "version": "1.1.0",
+  "description": "Site Portrait protocol: specification, JSON schemas, test vectors and reference service (client) for end-to-end tests.",
+  "license": "CC-BY-4.0 AND Apache-2.0",
+  "author": "ctrlweb (https://ctrlweb.ca)",
+  "homepage": "https://github.com/ctrlwebinc/site-portrait-protocol",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ctrlwebinc/site-portrait-protocol.git"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "site-portrait-reference-client": "bin/reference-client.mjs"
+  },
+  "exports": {
+    "./protocol": "./bin/lib/protocol.mjs",
+    "./client": "./bin/lib/client.mjs",
+    "./service": "./bin/lib/service.mjs",
+    "./state": "./bin/lib/state.mjs",
+    "./schema/*": "./schema/*",
+    "./test-vectors.json": "./test-vectors.json",
+    "./examples/*": "./examples/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "PROTOCOL.md",
+    "LICENSE",
+    "CHANGELOG.md",
+    "schema/",
+    "examples/",
+    "test-vectors.json",
+    "bin/"
+  ],
+  "scripts": {
+    "test": "node --test tests/",
+    "client": "node bin/reference-client.mjs"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "ajv-formats": "^3.0.1"
+  }
+}

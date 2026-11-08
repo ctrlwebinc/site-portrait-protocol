@@ -1,0 +1,17 @@
+{
+    "name": "ctrlweb/site-portrait-protocol",
+    "description": "Site Portrait protocol: specification, JSON schemas and test vectors, for the test suites of site-side implementations.",
+    "type": "library",
+    "license": ["CC-BY-4.0", "Apache-2.0"],
+    "homepage": "https://github.com/ctrlwebinc/site-portrait-protocol",
+    "authors": [
+        {
+            "name": "ctrlweb",
+            "homepage": "https://ctrlweb.ca"
+        }
+    ],
+    "require": {},
+    "archive": {
+        "exclude": ["/tests", "/.github", "/node_modules"]
+    }
+}
